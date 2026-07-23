@@ -14,9 +14,10 @@ provider "aws" {
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
   tags = {
-    name    = "Orbit Labs VPC"
-    project = "Orbit-labs"
-  }
+  name    = "Orbit Labs VPC"
+  project = "Orbit-labs"
+  owner   = "Saturnhead"
+}
 }
 
 resource "aws_subnet" "main" {
